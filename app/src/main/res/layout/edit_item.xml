@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context=".EditCar">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/edit_make"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:hint="@string/car_make" />
+
+                <EditText
+                    android:id="@+id/edit_model"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:hint="@string/car_model" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/edit_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:hint="@string/car_year"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edit_mileage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:hint="@string/car_mileage"
+                    android:inputType="number" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/edit_eng_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:hint="@string/car_eng_type" />
+
+                <EditText
+                    android:id="@+id/edit_eng_disp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:hint="@string/car_eng_disp"
+                    android:inputType="number" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/edit_trans_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:hint="@string/car_trans" />
+
+                <EditText
+                    android:id="@+id/edit_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:hint="@string/car_color" />
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/edit_body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:hint="@string/car_body" />
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:hint="@string/car_price"
+                    android:inputType="number" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/btn_add_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_image" />
+
+        <ImageView
+            android:id="@+id/edit_img"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_edit_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#B9B9B9"
+                android:text="@string/cancel_btn"
+                android:textColor="#000" />
+
+
+            <Button
+                android:id="@+id/btn_edit_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/apply_btn"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

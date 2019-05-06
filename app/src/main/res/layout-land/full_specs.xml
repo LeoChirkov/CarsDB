@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title_make_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ford Mondeo, 1998"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/car_img"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_directions_car_black_24dp" />
+
+        <TextView
+            android:id="@+id/car_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="3500 BYN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="@string/car_year" />
+
+                <TextView
+                    android:id="@+id/view_year"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="07.1998" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="Mileage" />
+
+                <TextView
+                    android:id="@+id/view_mileage"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="360 000 km" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="Engine type" />
+
+                <TextView
+                    android:id="@+id/view_eng_type"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="Gasoline" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="Engine displacement" />
+
+                <TextView
+                    android:id="@+id/view_eng_disp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="1800 cm3" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="@string/car_trans" />
+
+                <TextView
+                    android:id="@+id/view_trans_type"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="Manual" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="Color" />
+
+                <TextView
+                    android:id="@+id/view_color"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="Grey" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:text="@string/car_body" />
+
+                <TextView
+                    android:id="@+id/view_body"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:text="Saloon" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/edit_btn"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
